@@ -1,21 +1,10 @@
 @echo off
 chcp 65001
 
-::Creation fichier liste1 et liste2 si pas existant
-if exist "liste1.txt" (
-    echo Création du fichiers liste1.txt
-    mkdir liste1.txt
-)
-
-if exist "liste2.txt" (
-    echo Création du fichiers liste2.txt
-    mkdir liste2.txt
-
-
 :: Vérification de l'existence des fichiers
-if exist "log.txt" (
+if exist "differences.txt" (
     echo Suppression de l'ancien fichier.
-    erase /q /f "log.txt"
+    erase /q /f "differences.txt"
 )
 if not exist "liste1.txt" (
     echo Le fichier liste1.txt n'existe pas.
