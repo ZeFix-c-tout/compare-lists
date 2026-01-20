@@ -1,4 +1,4 @@
-# List-compare_script
+# compare-lists
 This batch script compares two lists and checks the correspondence between them.
 
 USAGE:
